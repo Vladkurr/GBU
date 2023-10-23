@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GBU</title>
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
@@ -65,7 +66,7 @@
         </div>
       </div>
     </div>
-    <div class="header-bottom d-none d-lg-flex justify-content-between">
+    <div class="header-bottom d-none d-lg-flex justify-content-between align-items-center">
       <div class="header-menu">
         <ul class="d-flex">
           <li class="menu-item"><a href="javascript:void(0)">Главная</a></li>
@@ -103,7 +104,7 @@
       </div>
     </div>
     <div class="header-mob-menu">
-      <ul class="d-flex flex-column m-x-auto">
+      <ul class="d-flex flex-column">
         <li class="menu-item"><a href="javascript:void(0)">Главная</a></li>
         <li class="menu-item"><a href="javascript:void(0)">О нас</a></li>
         </li>
@@ -117,56 +118,72 @@
     </div>
   </header>
   <section class="top-banner">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <button class="carousel-control-prev d-none d-lg-flex" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Предыдущий</span>
-      </button>
-      <button class="carousel-control-next d-none d-lg-flex" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Следующий</span>
-      </button>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/img/main-back.png" class="d-block w-100" alt="Жарко круглый год">
-          <h2>жарко
+    <div class="swiper">
+      <div class="swiper-wrapper container">
+        <div class="swiper-slide">
+          <h1 class="slider-title">жарко
             круглый
-            год</h2>
-          <div class="mslide-logo">
-            <img src="./assets/img/svg/logo.svg" alt=""><img src="./assets/img/svg/slide-logo.svg" alt="">
+            год</h1>
+          <div class="slider-img">
           </div>
+          <img src="./assets/img/main-back.png" alt="Жарко круглый год" loading="lazy">
         </div>
-        <div class="carousel-item">
-          <img src="./assets/img/main-back.png" class="d-block w-100" alt="Жарко круглый год">
-          <h2>жарко
+        <div class="swiper-slide">
+          <h1 class="slider-title">жарко
             круглый
-            год</h2>
-          <div class="mslide-logo">
-            <img src="./assets/img/svg/logo.svg" alt=""><img src="./assets/img/svg/slide-logo.svg" alt="">
+            год</h1>
+          <div class="slider-img">
           </div>
+          <img src="./assets/img/main-back.png" alt="Жарко круглый год" loading="lazy">
         </div>
-        <div class="carousel-item">
-          <img src="./assets/img/main-back.png" class="d-block w-100" alt="Жарко круглый год">
-          <h2>жарко
+        <div class="swiper-slide">
+          <h1 class="slider-title">жарко
             круглый
-            год</h2>
-          <div class="mslide-logo">
-            <img src="./assets/img/svg/logo.svg" alt=""><img src="./assets/img/svg/slide-logo.svg" alt="">
+            год</h1>
+          <div class="slider-img">
           </div>
+
+          <img src="./assets/img/main-back.png" alt="Жарко круглый год" loading="lazy">
+        </div>
+        <div class="pag-container">
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </div>
-    <!-- <h1 class="top-banner-title text-uppercase">жарко круглый год</h1> -->
+  </section>
+  <section class="news container d-none">
+    <div class="news-top d-flex justify-content-between">
+      <h2 class="section-title">Новости</h2>
+      <a href="javascript:void(0)" class="section-detail-link">все новости</a>
+    </div>
+    <div class="swiper-news">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide news-slide d-flex">
+          <div class="left-news d-flex justify-content-between col-sm">
+            <div class="news-date">06.07.23</div>
+            <div class="left-content">
+              <h2 class="left-news title">В Краснодарском крае открылась сеть отелей «умного туризма»</h2>
+              <div class="left-news-description">Гостиницы начали работу в новом муниципалитете региона – городском
+                округе
+                Сириус, который весной был отделен от
+                Адлерского района Сочи.
+                Новые отели расположены в Имеретинской низменности рядом с Олимпийским парком.</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+            </div>
+          </div>
+          <div class="right-news col-sm">
+            <div class="news-date">06.07.23</div>
+            <h2 class="right-news title">Кубанские медики получили путевки на отдых в Анапе на 5 млн рублей</h2>
+            <a href="javascript:void(0)" class="news-link">Читать далее</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination news-pag"></div>
+      <div class="swiper-button-prev news-prev"></div>
+      <div class="swiper-button-nextnews-next"></div>
+    </div>
   </section>
   <footer class="footer">
     <div class="container">
@@ -199,46 +216,46 @@
           <ul>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Общая информация
+                Общая информация
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Учредительные
+                Учредительные
                 документы
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Руководство
+                Руководство
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Структура
+                Структура
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Территориальный отдел
+                Территориальный отдел
                 в г. Геленджик
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Полномочия
+                Полномочия
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Финансово-
+                Финансово-
                 хозяйственная
                 деятельность
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Вакансии
+                Вакансии
               </a>
             </li>
           </ul>
@@ -248,37 +265,37 @@
           <ul>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Новости
+                Новости
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Календарь событий
+                Календарь событий
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Лето
+                Лето
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Осень
+                Осень
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Зима
+                Зима
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Весна
+                Весна
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Мультимедиа
+                Мультимедиа
               </a>
             </li>
           </ul>
@@ -289,32 +306,32 @@
             <ul>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Государственное задание
+                  Государственное задание
                 </a>
               </li>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Ситуационный центр
+                  Ситуационный центр
                 </a>
               </li>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Общая информация
+                  Общая информация
                 </a>
               </li>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Пляжные территории
+                  Пляжные территории
                 </a>
               </li>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Горячая линия
+                  Горячая линия
                 </a>
               </li>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Туристические маршруты
+                  Туристические маршруты
                 </a>
               </li>
             </ul>
@@ -324,17 +341,17 @@
             <ul>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Общая информация
+                  Общая информация
                 </a>
               </li>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Документы
+                  Документы
                 </a>
               </li>
               <li class="footer-menu-item">
                 <a href="javascript:void(0)">
-                  - Контакты
+                  Контакты
                 </a>
               </li>
             </ul>
@@ -345,49 +362,49 @@
           <ul>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Федеральное законодательство
+                Федеральное законодательство
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Нормативные правовые акты
+                Нормативные правовые акты
                 Краснодарского края
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Приказы учреждения
+                Приказы учреждения
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Антитеррор
+                Антитеррор
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - ГО и ЧС
+                ГО и ЧС
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Охрана труда
+                Охрана труда
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Отчет о проведении специальной
+                Отчет о проведении специальной
                 оценки условий труда
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Пожарная безопасность
+                Пожарная безопасность
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Антимонопольный комплаенс
+                Антимонопольный комплаенс
               </a>
             </li>
           </ul>
@@ -397,18 +414,18 @@
           <ul>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Федеральное законодательство
+                Федеральное законодательство
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Нормативные правовые акты
+                Нормативные правовые акты
                 Краснодарского края
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Комиссия по соблюдению
+                Комиссия по соблюдению
                 требований к служебному
                 поведению и урегулированию
                 конфликта интересов
@@ -416,24 +433,24 @@
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Методические материалы
+                Методические материалы
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Планы, доклады, отчеты
+                Планы, доклады, отчеты
               </a>
             </li>
             <li class="footer-menu-item">
               <a href="javascript:void(0)">
-                - Обратная связь для сообщений
+                Обратная связь для сообщений
                 о фактах коррупции
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom d-block d-m-flex  justify-content-between align-items-center">
+      <div class="footer-bottom d-block d-sm-flex  justify-content-between align-items-center">
         <div class="bottom-left">
           <a href="javascript:void(0)" class="footer-law-map">Законодательная карта сайта</a>
           <a href="javascript:void(0)" class="footer-policy">Политика обработки персональных данных</a>
@@ -463,6 +480,7 @@
     </div>
   </footer>
   <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="/assets/js/script.js"></script>
 </body>
 
