@@ -29,10 +29,12 @@ const swiper = new Swiper('.swiper', {
 
 const swiperNews = new Swiper('.swiper-news', {
     direction: 'horizontal',
+    rewind: true,
+    spaceBetween: 30,
+    // centeredSlides: true,
     loop: true,
-    slidesPerView: auto,
+    slidesPerView: 1,
     speed: 500,
-    effect: 'fade',
     grabCursor: true,
     pagination: {
         el: '.news-pag',
