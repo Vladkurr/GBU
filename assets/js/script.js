@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     speed: 500,
     effect: 'fade',
-    grabCursor: true,
+    // grabCursor: true,
     breakpoints: {
         992: {
             direction: 'vertical',
@@ -29,19 +29,17 @@ const swiper = new Swiper('.swiper', {
 
 const swiperNews = new Swiper('.swiper-news', {
     direction: 'horizontal',
-    rewind: true,
-    spaceBetween: 30,
+    spaceBetween: 0,
     // centeredSlides: true,
     loop: true,
     slidesPerView: 1,
     speed: 500,
-    grabCursor: true,
+    // grabCursor: true,
     pagination: {
         el: '.news-pag',
     },
     navigation: {
-        nextEl: '.news-prev',
-        prevEl: '.news-next',
+        nextEl: '.news-next',
+        prevEl: '.news-prev',
     },
-
 });
