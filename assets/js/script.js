@@ -79,7 +79,6 @@ window.addEventListener("scroll", () => {
         headerFixed.classList.remove("active")
     }
 })
-document.querySelector('#search').focus();
 
 document.querySelector('.fixed-search').addEventListener('click', () => {
     document.querySelector('#search').querySelector('.search-field').focus();
@@ -91,8 +90,9 @@ document.querySelector(".fixed-burger").addEventListener("click", () => {
     menu.classList.toggle("active")
     document.body.style.overflowY = "scroll";
     if (menu.classList.contains("active")) {
-        menu.style = 'top:' + (parseInt(window.scrollY) + 65) + "px"
-        console.log('top:' + (parseInt(window.scrollY) + parseInt(window.innerHeight)));
+        let scroll = parseInt(window.scrollY) + 65;
+        menu.style.top = `${scroll}px`;
+        console.log(menu.style.top);
         document.body.style.overflowY = "hidden";
     }
 })
