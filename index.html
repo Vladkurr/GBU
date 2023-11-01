@@ -80,7 +80,7 @@
           <li class="menu-item"><a href="javascript:void(0)">Контакты</a></li>
         </ul>
       </div>
-      <div class="header-search">
+      <div id="search" class=" header-search">
         <input type="search" class="search-field" placeholder="Найти...">
         <a href="javascript:void(0)" class="search-link">
           <img src="./assets/img/svg/search.svg" alt="search" class="search-icon">
@@ -103,20 +103,47 @@
         </div>
       </div>
     </div>
-    <div class="header-mob-menu">
-      <ul class="d-flex flex-column">
-        <li class="menu-item"><a href="javascript:void(0)">Главная</a></li>
-        <li class="menu-item"><a href="javascript:void(0)">О нас</a></li>
-        </li>
-        <li class="menu-item"><a href="javascript:void(0)">ТИЦ</a></li>
-        <li class="menu-item"><a href="javascript:void(0)">События</a></li>
-        <li class="menu-item"><a href="javascript:void(0)">Деятельность</a></li>
-        <li class="menu-item"><a href="javascript:void(0)">Документы</a></li>
-        <li class="menu-item"><a href="javascript:void(0)">Противодействие коррупции</a></li>
-        <li class="menu-item"><a href="javascript:void(0)">Контакты</a></li>
-      </ul>
+    <div class="header-fixed">
+      <div class="fixed-content d-flex align-items-center justify-content-between">
+        <div class="fixed-left d-flex align-items-center">
+          <a href="/" class="mob-logo">
+            <img src="./assets/img/svg/mob-log.svg" alt="logo">
+          </a>
+          <ul class="d-flex flex-row">
+            <li class="menu-item"><a href="javascript:void(0)">Главная</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">О нас</a></li>
+            </li>
+            <li class="menu-item"><a href="javascript:void(0)">ТИЦ</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">События</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Деятельность</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Документы</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Противодействие коррупции</a></li>
+            <li class="menu-item"><a href="javascript:void(0)">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="fixed-right">
+          <a href="#" class="fixed-search"><img src="./assets/img/svg/search.svg" alt="search"></a>
+          <div class="mob-burger fixed-burger">
+            <span></span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </header>
+  <div class="header-mob-menu">
+    <ul class="d-flex flex-column">
+      <li class="menu-item"><a href="javascript:void(0)">Главная</a></li>
+      <li class="menu-item"><a href="javascript:void(0)">О нас</a></li>
+      </li>
+      <li class="menu-item"><a href="javascript:void(0)">ТИЦ</a></li>
+      <li class="menu-item"><a href="javascript:void(0)">События</a></li>
+      <li class="menu-item"><a href="javascript:void(0)">Деятельность</a></li>
+      <li class="menu-item"><a href="javascript:void(0)">Документы</a></li>
+      <li class="menu-item"><a href="javascript:void(0)">Противодействие коррупции</a></li>
+      <li class="menu-item"><a href="javascript:void(0)">Контакты</a></li>
+    </ul>
+  </div>
   <section class="top-banner">
     <div class="swiper">
       <div class="swiper-wrapper container">
@@ -156,7 +183,7 @@
   <section class="news container">
     <div class="news-top d-flex justify-content-between">
       <h2 class="section-title">Новости</h2>
-      <a href="javascript:void(0)" class="section-detail-link">все новости</a>
+      <a href="javascript:void(0)" class="section-detail-link d-none d-lg-block">все новости</a>
     </div>
     <div class="swiper-news desc">
       <div class="swiper-wrapper">
@@ -279,10 +306,11 @@
   </section>
   <section class="popular container">
     <h2 class="section-title">Популярное</h2>
-    <div class="popular-table container">
+    <div class="popular-table">
       <div class="popular-row row gx-4 gy-4">
         <div class="col-md-6 col-lg-3">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-1.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-1.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-1-1.svg" alt="icon left">
@@ -296,7 +324,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-2.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-2.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-2-1.svg" alt="icon left">
@@ -309,7 +338,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-3.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-3.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-3-1.svg" alt="icon left">
@@ -323,7 +353,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-2">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-4.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-4.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-4-1.svg" alt="icon left">
@@ -336,7 +367,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-5.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-5.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-5-1.svg" alt="icon left">
@@ -350,7 +382,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-5">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-6.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-6.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-6-1.svg" alt="icon left">
@@ -364,7 +397,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-7.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-7.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-7-1.svg" alt="icon left">
@@ -377,7 +411,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-5">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-8.jpg'); ">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-8.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-8-1.svg" alt="icon left">
@@ -385,13 +420,20 @@
             <div class="pop-icon-right">
               <img src="./assets/img/svg/p-8-2.svg" alt="icon right">
             </div>
-            <div class="popular-shadow-v2"></div>
-            <h2 class="title">Календарь
+            <div class="popular-shadow"></div>
+            <h2 class="title-calendar">Календарь
               Событий</h2>
+            <ul>
+              <li>Весна</li>
+              <li>Лето</li>
+              <li>Осень</li>
+              <li>Зима</li>
+            </ul>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-9.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-9.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-9-1.svg" alt="icon left">
@@ -405,7 +447,8 @@
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="popular-item" style="background: center no-repeat url('./assets/img/p-10.jpg');">
+          <div class="popular-item"
+            style="background: linear-gradient(25deg, rgba(0, 0, 0, 0.80) -0.66%, rgba(0, 0, 0, 0.54) 38%, rgba(0, 0, 0, 0.00) 100%),  center no-repeat url(./assets/img/p-10.jpg), lightgray 50% / cover no-repeat;">
             <a href="javascript:void(0)" class="popular-link"></a>
             <div class="pop-icon-left">
               <img src="./assets/img/svg/p-10-1.svg" alt="icon left">
@@ -488,11 +531,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-top d-flex justify-content-between">
-        <div class="footer-left d-flex align-items-center">
+        <div class="footer-left flex-column flex-lg-row d-flex align-items-lg-center justify-content-between">
           <a href="/" class="footer-logo">
             <img src="./assets/img/svg/logo.svg" alt="logo">
           </a>
-          <div class="footer-top-text d-none d-md-block text-uppercase">
+          <div class="footer-top-text text-uppercase">
             <div class="footer-top-title-top">Министерство курортов, туризма и олимпийского наследия Краснодарского
               Края
             </div>
@@ -750,8 +793,8 @@
           </ul>
         </div>
       </div>
-      <div class="footer-bottom d-block d-sm-flex  justify-content-between align-items-center">
-        <div class="bottom-left">
+      <div class="footer-bottom d-block d-flex  justify-content-between align-items-center">
+        <div class="bottom-left d-flex flex-column flex-md-row">
           <a href="javascript:void(0)" class="footer-law-map">Законодательная карта сайта</a>
           <a href="javascript:void(0)" class="footer-policy">Политика обработки персональных данных</a>
         </div>
@@ -769,7 +812,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-powered d-flex justify-content-between">
+      <div class="footer-powered d-block d-lg-flex justify-content-between">
         <div class="footer-powered-item">© 2023. Все права защищены</div>
         <div class="footer-powered-item">При использовании материалов с сайта, активная ссылка на источник обязательна
         </div>
