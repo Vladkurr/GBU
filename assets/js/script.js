@@ -41,23 +41,6 @@ const swiperCalendar = new Swiper('.swiper-calendar', {
 
 });
 
-const swiperNews = new Swiper('.swiper-news', {
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    speed: 500,
-    pagination: {
-        el: '.news-pag',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.news-next',
-        prevEl: '.news-prev',
-    },
-});
-
-
-
 document.querySelector(".mob-burger").addEventListener("click", () => {
     document.querySelector(".mob-burger").classList.toggle("active")
     document.querySelector(".header-mob-menu").classList.toggle("active")
@@ -68,7 +51,10 @@ document.querySelector(".mob-burger").addEventListener("click", () => {
 })
 
 // popular
-if (document.querySelector('.popular') != null) {
+const screenWidth = window.screen.width;
+console.log(screenWidth)
+if (document.querySelector('.popular') != null && screenWidth > 991) {
+
     document.querySelector(".popular").addEventListener("mouseover", (e) => {
         if (!e.target.classList.contains('popular-link')) return;
         let shadow = e.target.parentElement.querySelector('.popular-shadow');
