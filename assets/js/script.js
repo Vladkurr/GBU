@@ -41,6 +41,23 @@ const swiperCalendar = new Swiper('.swiper-calendar', {
 
 });
 
+
+const swiperNews = new Swiper('.swiper-news', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    speed: 500,
+    pagination: {
+        el: '.news-pag',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.news-next',
+        prevEl: '.news-prev',
+    },
+});
+
+
 document.querySelector(".mob-burger").addEventListener("click", () => {
     document.querySelector(".mob-burger").classList.toggle("active")
     document.querySelector(".header-mob-menu").classList.toggle("active")
@@ -49,6 +66,8 @@ document.querySelector(".mob-burger").addEventListener("click", () => {
         document.querySelector('body').style["overflow"] = "hidden";
     }
 })
+
+
 
 // popular
 const screenWidth = window.screen.width;
