@@ -58,20 +58,12 @@ const swiperNews = new Swiper('.swiper-news', {
 });
 
 
-document.querySelector(".mob-burger").addEventListener("click", () => {
-    document.querySelector(".mob-burger").classList.toggle("active")
-    document.querySelector(".header-mob-menu").classList.toggle("active")
-    document.querySelector('body').style["overflow"] = "scroll";
-    if (document.querySelector(".header-mob-menu").classList.contains("active")) {
-        document.querySelector('body').style["overflow"] = "hidden";
-    }
-})
+
 
 
 
 // popular
 const screenWidth = window.screen.width;
-console.log(screenWidth)
 if (document.querySelector('.popular') != null && screenWidth > 991) {
 
     document.querySelector(".popular").addEventListener("mouseover", (e) => {
@@ -129,4 +121,25 @@ document.querySelector(".fixed-burger").addEventListener("click", () => {
         console.log(menu.style.top);
         document.body.style.overflowY = "hidden";
     }
+})
+
+document.querySelector(".mob-burger").addEventListener("click", () => {
+    document.querySelector(".mob-burger").classList.toggle("active")
+    let menu = document.querySelector(".header-mob-menu")
+    menu.classList.toggle("active")
+    document.body.style.overflowY = "scroll";
+    if (menu.classList.contains("active")) {
+        let scroll = parseInt(window.scrollY) + 110;
+        menu.style.top = `${scroll}px`;
+        document.body.style.overflowY = "hidden";
+    }
+})
+
+
+// calendar tabs
+
+var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
+tabEl.addEventListener('shown.bs.tab', function (event) {
+    event.target // недавно активированная вкладка
+    event.relatedTarget // предыдущая активная вкладка
 })

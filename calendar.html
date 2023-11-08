@@ -129,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="header-mob-menu">
+    <div class="header-mob-menu container">
       <ul class="d-flex flex-column">
         <li class="menu-item"><a href="javascript:void(0)">Главная</a></li>
         <li class="menu-item"><a href="javascript:void(0)">О нас</a></li>
@@ -206,218 +206,777 @@
   </section>
 
   <section class="categories container">
-    <div class="cat-tabs row g-4">
-      <div class="col-6 col-lg-3">
-        <div class="cat-item">
+    <ul id="calendar-tab" class="cat-tabs row g-4" role="tablist">
+      <li class="col-6 col-lg-3">
+        <div class="cat-item" id="pills-spring-tab" data-bs-toggle="pill" data-bs-target="#pills-spring" type="button"
+          role="tab" aria-controls="pills-spring" aria-selected="true">
           <div class="cat-title">Весна</div>
-          <a href="javascript:void(0)" class="cat-link"></a>
+          <a class="cat-link"></a>
         </div>
-      </div>
-      <div class="col-6 col-lg-3">
-        <div class="cat-item active">
+      </li>
+      <li class="col-6 col-lg-3">
+        <div class="cat-item active" id="pills-summer-tab" data-bs-toggle="pill" data-bs-target="#pills-summer"
+          type="button" role="tab" aria-controls="pills-summer" aria-selected="true">
           <div class="cat-title">Лето</div>
-          <a href="javascript:void(0)" class="cat-link"></a>
+          <a class="cat-link"></a>
         </div>
-      </div>
-      <div class="col-6 col-lg-3">
-        <div class="cat-item">
+      </li>
+      <li class="col-6 col-lg-3">
+        <div class="cat-item" id="pills-autumn-tab" data-bs-toggle="pill" data-bs-target="#pills-autumn" type="button"
+          role="tab" aria-controls="pills-autumn" aria-selected="true">
           <div class="cat-title">Осень</div>
-          <a href="javascript:void(0)" class="cat-link"></a>
+          <a class="cat-link"></a>
         </div>
-      </div>
-      <div class="col-6 col-lg-3">
-        <div class="cat-item">
+      </li>
+      <li class="col-6 col-lg-3">
+        <div class="cat-item" id="pills-winter-tab" data-bs-toggle="pill" data-bs-target="#pills-winter" type="button"
+          role="tab" aria-controls="pills-winter" aria-selected="true">
           <div class="cat-title">Зима</div>
-          <a href="javascript:void(0)" class="cat-link"></a>
+          <a class="cat-link"></a>
         </div>
-      </div>
-    </div>
-    <div class="cat-news row g-4">
+      </li>
+    </ul>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-1.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
+    <div class="tab-content" id="calendat-tabcontent">
+      <div class="tab-pane fade show active" id="pills-spring" role="tabpanel" aria-labelledby="pills-spring-tab">
+        <div class="cat-news row g-4">
+
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-2.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-2.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-3.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-3.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-4.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-4.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-5.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-5.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-6.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-6.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-7.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-7.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-8.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-8.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
-            </div>
-          </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
-        </div>
-      </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-9.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cat-news-item"
-          style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-9.jpg), lightgray 50% / cover no-repeat;">
-          <div class="cat-top d-flex">
-            <div class="cat-date d-flex align-items-center">
-              <img src="./assets/img/svg/cat-date.svg" alt="date">
-              <span>25 июля</span>
-            </div>
-            <div class="cat-loc d-flex align-items-center">
-              <img src="./assets/img/svg/cat-loc.svg" alt="location">
-              <span>Краснодар</span>
             </div>
           </div>
-          <div class="cat-item-title">Отдых на природе</div>
-          <a href="javascript:void(0)" class="news-link">Читать далее</a>
-          <a href="javascript:void(0)" class="news-link-double"></a>
+
+
+        </div>
+        <div class="cat-pagination d-flex align-items-center">
+          <a href="javascript:void()" class="pag-left-arrow"></a>
+          <div class="pag-nums">
+            <a href="javascript:void(0)" class="pag-num active">1</a>
+            <a href="javascript:void(0)" class="pag-num">2</a>
+            <a href="javascript:void(0)" class="pag-num">3</a>
+            <a href="javascript:void(0)" class="pag-num">4</a>
+            <a href="javascript:void(0)" class="pag-num">...</a>
+            <a href="javascript:void(0)" class="pag-num">7</a>
+          </div>
+          <a href="javascript:void()" class="pag-right-arrow"></a>
         </div>
       </div>
+      <div class="tab-pane fade" id="pills-summer" role="tabpanel" aria-labelledby="pills-summer-tab">
+        <div class="cat-news row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-1.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-2.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-3.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-4.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-5.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-6.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-7.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-8.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-9.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
 
 
-    </div>
-    <div class="cat-pagination d-flex align-items-center">
-      <a href="javascript:void()" class="pag-left-arrow"></a>
-      <div class="pag-nums">
-        <a href="javascript:void(0)" class="pag-num active">1</a>
-        <a href="javascript:void(0)" class="pag-num">2</a>
-        <a href="javascript:void(0)" class="pag-num">3</a>
-        <a href="javascript:void(0)" class="pag-num">4</a>
-        <a href="javascript:void(0)" class="pag-num">...</a>
-        <a href="javascript:void(0)" class="pag-num">7</a>
+        </div>
+        <div class="cat-pagination d-flex align-items-center">
+          <a href="javascript:void()" class="pag-left-arrow"></a>
+          <div class="pag-nums">
+            <a href="javascript:void(0)" class="pag-num active">1</a>
+            <a href="javascript:void(0)" class="pag-num">2</a>
+            <a href="javascript:void(0)" class="pag-num">3</a>
+            <a href="javascript:void(0)" class="pag-num">4</a>
+            <a href="javascript:void(0)" class="pag-num">...</a>
+            <a href="javascript:void(0)" class="pag-num">7</a>
+          </div>
+          <a href="javascript:void()" class="pag-right-arrow"></a>
+        </div>
       </div>
-      <a href="javascript:void()" class="pag-right-arrow"></a>
+      <div class="tab-pane fade" id="pills-autumn" role="tabpanel" aria-labelledby="pills-autumn-tab">
+        <div class="cat-news row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-1.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-2.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-3.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-4.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-5.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-6.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-7.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-8.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-9.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+
+        </div>
+        <div class="cat-pagination d-flex align-items-center">
+          <a href="javascript:void()" class="pag-left-arrow"></a>
+          <div class="pag-nums">
+            <a href="javascript:void(0)" class="pag-num active">1</a>
+            <a href="javascript:void(0)" class="pag-num">2</a>
+            <a href="javascript:void(0)" class="pag-num">3</a>
+            <a href="javascript:void(0)" class="pag-num">4</a>
+            <a href="javascript:void(0)" class="pag-num">...</a>
+            <a href="javascript:void(0)" class="pag-num">7</a>
+          </div>
+          <a href="javascript:void()" class="pag-right-arrow"></a>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-winter" role="tabpanel" aria-labelledby="pills-winter-tab">
+        <div class="cat-news row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-1.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-2.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-3.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-4.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-5.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-6.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-7.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-8.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div onclick="javascript:void(0)" class="cat-news-item"
+              style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/img/cat-9.jpg), lightgray 50% / cover no-repeat;">
+              <div class="cat-top d-flex">
+                <div class="cat-date d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-date.svg" alt="date">
+                  <span>25 июля</span>
+                </div>
+                <div class="cat-loc d-flex align-items-center">
+                  <img src="./assets/img/svg/cat-loc.svg" alt="location">
+                  <span>Краснодар</span>
+                </div>
+              </div>
+              <div class="cat-item-title">Отдых на природе</div>
+              <a href="javascript:void(0)" class="news-link">Читать далее</a>
+
+            </div>
+          </div>
+
+
+        </div>
+        <div class="cat-pagination d-flex align-items-center">
+          <a href="javascript:void()" class="pag-left-arrow"></a>
+          <div class="pag-nums">
+            <a href="javascript:void(0)" class="pag-num active">1</a>
+            <a href="javascript:void(0)" class="pag-num">2</a>
+            <a href="javascript:void(0)" class="pag-num">3</a>
+            <a href="javascript:void(0)" class="pag-num">4</a>
+            <a href="javascript:void(0)" class="pag-num">...</a>
+            <a href="javascript:void(0)" class="pag-num">7</a>
+          </div>
+          <a href="javascript:void()" class="pag-right-arrow"></a>
+        </div>
+      </div>
     </div>
   </section>
 
